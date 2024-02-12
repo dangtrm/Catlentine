@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d3bdb0;
+}
+
+div.content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 800px;
+  padding: 20px;
+}
+
+div.img-gif {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+img {
+  border-radius: 10px;
+  width: 350px;
+  height: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.5s ease; /* Add transition for opacity */
+  opacity: 1; /* Set initial opacity */
+}
+
+div.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-top: 20px;
+}
+
+button {
+  position: absolute;
+  padding: 10px 40px;
+  color: black;
+  font-size: 1.2em;
+  font-weight: 600;
+  border: 3px solid #89937c;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+button:nth-child(1) {
+  margin-left: -150px;
+}
+
+button:nth-child(2) {
+  margin-right: -150px;
+}
+
+button:hover {
+  transform: scale(1.3);
+  background-color: #89937c;
+}

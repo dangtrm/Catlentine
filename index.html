@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/cat-icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Catlentine</title>
+</head>
+<body>
+    <div class="content">
+        <h1 class="text" style="color:cadetblue">Do you wanna be my catlentine?</h1>
+        <h2 class="hint" style="color:whitesmoke">Hint: Click the GIF(s) below to hear cat sounds</h2>
+        <h1 class="icon" style="color:cornflowerblue">&#8595;</h2>
+        <div class="img-gif">
+            <img id="gif" src="images/orange-cat.gif" alt="valentine gif">
+            <img id="gif2"
+            style="display: none;"
+            src="images/cat-dance2.gif" alt="cat-happy">
+        </div>
+        <div class="buttons">
+            <button class="yes" >Yes</button>
+            <button class="no">No</button>
+            <button style="display: none;" onclick="reset()">Back to start</button>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
